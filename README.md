@@ -3,7 +3,7 @@ PYTHON で Line Botオウム返しのデプロイ。
 HerokuとGitを紐づけてLine Bot を作る
 
 
-【Line Developersに登録する】
+## 【Line Developersに登録する】
 	・プロバイダ作成 - チャネル設定（MessagingAPI）- 各種登録
 	・チャネル基本設定
 		チャネルシークレット発行
@@ -15,13 +15,13 @@ HerokuとGitを紐づけてLine Bot を作る
 			→環境変数設定時、Herokuは意図したアプリ、リポジトリをいじれているか？
 
 
-【PCにGitをDL、Githubの設定を行う】
+## 【PCにGitをDL、Githubの設定を行う】
 	・いきなりGitのコマンド出てきて積んだ。
 	・GithubとGitは別物だと思うけど、GitをインストールしたらシェルでGitうごかせたから必須。
 	・パスに注意。カレントディレクトリをファイルの置いてあるディレクトリに指定してね。
 
 
-【Heroku】
+## 【Heroku】
 	・Herokuのアカウントを取得。
 	・Heroku にログインする。
 	・Heroku CLIインストール
@@ -40,7 +40,7 @@ HerokuとGitを紐づけてLine Bot を作る
 	・Herokuのマイページから、 Deployタブに飛んで、Githubのリポジトリとコネクト。
 
 
-【設定ファイルの作成】
+## 【設定ファイルの作成】
 	・ [runtime.txt] というファイルを作る。記載内容は以下。
 		python-3.8.6　　#バージョンを記載する。
 	・ [Procfile] というファイルを作る。
@@ -51,7 +51,7 @@ HerokuとGitを紐づけてLine Bot を作る
 		line-bot-sdk==1.17.0　　#20201211現在。シェル上で pip freeze と入力して情報確認
 
 
-【参考URL】
+## 【参考URL】
 	https://www.casleyconsulting.co.jp/blog/engineer/3028/
 		→一連の流れがよくわかる。　ソースコードダメ。
 		コードブロックが化けていて注意だけど大変参考になる。（&amp;amp;amp;amp;とか不要。）
@@ -64,7 +64,7 @@ HerokuとGitを紐づけてLine Bot を作る
  		→動作しているのはこのソースコード。一番ためになる。
 
 
- 【手順】
+ ## 【手順】
  	必要なライブラリインストールしてからHerokuにサインイン　
 	 	pip install flask
 		pip install line-bot-sdk  →　これもはまった。　python関係のツールを再インストールして解決。
